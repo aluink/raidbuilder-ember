@@ -1,5 +1,6 @@
-import DS from 'ember-data';
+import RESTAdapter from 'ember-data/adapters/rest';
 
-export default DS.JSONAPIAdapter.extend({
-  host: 'http://localhost:8080/api'
+export default RESTAdapter.extend({
+  namespace: 'api'
 });
+
